@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RegioesApiModel } from 'src/app/services/regioes-api-model';
+import { RegioesApiService } from 'src/app/services/regioes-api.service';
 
 @Component({
   selector: 'app-regioes-page',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegioesPageComponent implements OnInit {
 
-  constructor() { }
+  listaRegioes: RegioesApiModel[] = [];
+
+  constructor(public regioesApi: RegioesApiService) { }
 
   ngOnInit(): void {
+    this.regioesApi.get().subscribe({
+      next: ((retApi) => {
+        this.listaRegioes = retApi;
+        console.log(this.listaRegioes)
+      })
+    })
   }
 
 }
