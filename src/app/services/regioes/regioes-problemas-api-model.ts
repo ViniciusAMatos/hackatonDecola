@@ -1,4 +1,4 @@
 export interface RegioesProblemasApiModel {
-  descricao: string,
+  descricao: string | undefined,
   porcentagem: string
 }
