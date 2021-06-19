@@ -13,6 +13,10 @@ export class TransmissorPageComponent implements OnInit {
 
   constructor(public transmissoresApi: TransmissorApiService) { }
 
+  denuncia(): void {
+    alert("Ligue para 180 URGENTE");
+  }
+
   ngOnInit(): void {
     this.transmissoresApi.get().subscribe({
       next: (retornoDaApi) => {
