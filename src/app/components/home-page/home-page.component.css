@@ -30,6 +30,10 @@ img{
   padding: 15px;
 }
 
+h2 {
+  color: midnightblue;
+}
+
 h3{
   text-align: center;
   color: midnightblue;
@@ -37,7 +41,17 @@ h3{
   font-weight: bolder;
 }
 
-h2 {
+h4{
+  text-align: center;
   color: midnightblue;
+  font-size: large;
+  font-weight: bolder;
+}
+
+h5{
+  text-align: center;
+  color: midnightblue;
+  font-size: large;
+  font-weight: bolder;
 }
 
