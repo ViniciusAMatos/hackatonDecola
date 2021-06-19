@@ -20,6 +20,10 @@ const routes: Routes = [{
     {
       path: 'regioes',
       component: RegioesPageComponent
+    },
+    {
+      path: '**',
+      component: HomePageComponent
     }
   ]
 }];
