@@ -1,3 +1,13 @@
-<p  *ngFor="let item of listaRegioes">{{item.cidade}}
-  <li *ngFor="let sItem of item.problemas">{{sItem.descricao}}</li>
-</p>
+<div class="all">
+  <h1>Saneamento e problemas regionais</h1>
+  <div class="compReg" *ngFor="let item of listaRegioes">
+    <div id="cidade">
+      <div>
+        <h2>{{item.cidade}}</h2>
+        <li *ngFor="let sItem of item.problemas">{{sItem.descricao}} - {{sItem.porcentagem}}%</li>
+      </div>
+      <img [src]="item.imagem">
+    </div>
+    <div id="regiao">{{item.regiao}}</div>
+  </div>
+</div>
