@@ -41,11 +41,14 @@ img{
   font-style: italic;
 }
 
+.all{
+  padding-top: 10px;
+}
 .botaoViolencia{
   padding-top:20px;
   display: flex;
   flex-direction: column;
-justify-content:center;
+  justify-content:center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
