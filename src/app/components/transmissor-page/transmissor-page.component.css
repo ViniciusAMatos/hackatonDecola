@@ -3,3 +3,24 @@ app-transmissor-card{
   padding: 0;
   display: block;
 }
+.containerTexto{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+}
+h1{
+  padding-top: 18px;
+  font-weight: bold;
+  font-size: 23px;
+  text-align:start
+}
+p{
+  text-indent: 20px;
+  font-size: 16px;
+}
+p b {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
