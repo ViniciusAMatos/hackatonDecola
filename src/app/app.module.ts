@@ -15,6 +15,8 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { TransmissorPageComponent } from './components/transmissor-page/transmissor-page.component';
 import { RegioesPageComponent } from './components/regioes-page/regioes-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+import { TransmissorCardComponent } from './components/transmissor-card/transmissor-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     MenuTemplateComponent,
     HomePageComponent,
     TransmissorPageComponent,
-    RegioesPageComponent
+    RegioesPageComponent,
+    TransmissorCardComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

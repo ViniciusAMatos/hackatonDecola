@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TransmissorApiModel } from 'src/app/services/transmissor/transmissor-api-model';
+import { TransmissorApiService } from 'src/app/services/transmissor/transmissor-api.service';
 
 @Component({
   selector: 'app-transmissor-page',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransmissorPageComponent implements OnInit {
 
-  constructor() { }
+  listaDeTransmissores: TransmissorApiModel[] = [];
+
+  constructor(public transmissoresApi: TransmissorApiService) { }
 
   ngOnInit(): void {
-  }
+    this.transmissoresApi.get().subscribe({
+      next: (retornoDaApi) => {
+        this.listaDeTransmissores = retornoDaApi;
+      }
+    });
 
+  }
 }
