@@ -19,6 +19,5 @@ export class TransmissorPageComponent implements OnInit {
         this.listaDeTransmissores = retornoDaApi;
       }
     });
-
   }
 }

@@ -17,6 +17,7 @@ import { RegioesPageComponent } from './components/regioes-page/regioes-page.com
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { TransmissorCardComponent } from './components/transmissor-card/transmissor-card.component';
+import { SlideCardComponent } from './components/slide-card/slide-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TransmissorCardComponent } from './components/transmissor-card/transmis
     HomePageComponent,
     TransmissorPageComponent,
     RegioesPageComponent,
-    TransmissorCardComponent
+    TransmissorCardComponent,
+    SlideCardComponent
   ],
   imports: [
     BrowserModule,
