@@ -1,7 +1,8 @@
-<mat-card>
-  <img [src]="transmissor?.imagem">
-  ​
-  <div class="nome">
-    <h3>{{transmissor?.nome}}</h3>
+<div class="cardTransmissor">
+
+  <div class="nome">{{transmissor?.nome}}
+
   </div>
-</mat-card>
+  <img [src]="transmissor?.imagem" [alt]="transmissor?.nome">
+
+</div>
