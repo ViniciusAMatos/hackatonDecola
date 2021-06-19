@@ -16,9 +16,9 @@ export class RegioesPageComponent implements OnInit {
   ngOnInit(): void {
     this.regioesApi.get().subscribe({
       next: ((retApi) => {
-        this.listaRegioes = retApi;
+        this.listaRegioes = retApi.sort((a, b) => a.cidade < b.cidade ? -1 : 1).filter((v) => !(v.id == 5));
+        console.log(this.listaRegioes)
       })
     })
   }
-
 }
