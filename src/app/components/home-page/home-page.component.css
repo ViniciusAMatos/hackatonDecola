@@ -11,5 +11,17 @@ img{
 }
 
 .resumo{
-  text-align: center;
+  text-align:justify;
+  padding: 15px;
 }
+h3{
+  text-align: center;
+  color: midnightblue;
+  font-size: large;
+  font-weight: bolder;
+}
+
+h2 {
+  color: midnightblue;
+}
+

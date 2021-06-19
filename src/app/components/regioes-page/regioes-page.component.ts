@@ -17,7 +17,6 @@ export class RegioesPageComponent implements OnInit {
     this.regioesApi.get().subscribe({
       next: ((retApi) => {
         this.listaRegioes = retApi;
-        console.log(this.listaRegioes)
       })
     })
   }
