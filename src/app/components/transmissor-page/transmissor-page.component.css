@@ -25,12 +25,12 @@ p b {
   padding-bottom: 15px;
 }
 
-a{
-  font-weight: 100;
-  font-size: 14px;
-  text-decoration: none;
-  text-decoration-color: pink;
-  color: pink;
-  padding-bottom: 10px;
-  padding-left: 15px;
+.botaoViolencia{
+  padding-top:20px;
+  display: flex;
+  flex-direction: column;
+justify-content:center;
+  align-items: center;
+  padding-bottom: 30px;
 }
+

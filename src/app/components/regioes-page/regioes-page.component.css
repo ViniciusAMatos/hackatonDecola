@@ -40,3 +40,12 @@ img{
   justify-content: flex-end;
   font-style: italic;
 }
+
+.botaoViolencia{
+  padding-top:20px;
+  display: flex;
+  flex-direction: column;
+justify-content:center;
+  align-items: center;
+  margin-bottom: 30px;
+}
