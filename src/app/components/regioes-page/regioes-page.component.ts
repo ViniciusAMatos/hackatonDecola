@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RegioesApiModel } from 'src/app/services/regioes-api-model';
-import { RegioesApiService } from 'src/app/services/regioes-api.service';
+import { RegioesApiModel } from 'src/app/services/regioes/regioes-api-model';
+import { RegioesApiService } from 'src/app/services/regioes/regioes-api.service';
 
 @Component({
   selector: 'app-regioes-page',
